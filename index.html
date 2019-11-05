@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Broom</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Tipografia -->
+        <style type="text/css">
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                background-color: bisque;
+            }
+            
+            @font-face{
+                font-family:'SansPosterBold3D';
+            src: url('fonts/SansPoster3DBoldJL.ttf'); 
+            src: url('fonts/SansPoster3DBoldJL.svg');
+            src: url('fonts/SansPoster3DBoldJL.woff');   
+
+            }
+            
+            @font-face{
+                font-family:'TYPEWR';
+            src: url('fonts/typewriter/TYPEWR__.eot');
+            src: url('fonts/typewriter/TYPEWR__.woff2');
+            src: url('fonts/typewriter/Typewriter.svg');
+            src: url('fonts/typewriter/Typewriter.ttf');
+            src: url('fonts/typewriter/Typewriter.woff'); 
+            } 
+            
+            div[title="B"]{    
+                font-size: 20vw;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                font-family: 'SansPosterBold3D';
+                color: #9b0e16;
+            }
+            div[title="vol_"]{
+                position: absolute;
+                height: 200px;
+                top: 20px;
+                left: 43%;
+                z-index: 2;
+                font-family: 'TYPEWR';
+                color: darkred;
+            }
+            div[title="vol_"] p:first-child{
+                position: absolute;
+                font-size: 2vh;
+                z-index: 2;
+            }
+            div[title="vol_"] p:last-child{
+                position: absolute;
+                left: 25px;
+                top: -5px;
+                font-size: 20vh;
+                font-family: 'TYPEWR';
+                z-index: 1;
+            }
+            div[title="B2"]{
+                transform: rotate(180deg);
+                font-size: 20vw;
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 1;
+                color: #9b0e16;
+                font-family: 'SansPosterBold3D';     
+            }
+            div[title="R"]{
+                font-size: 15vw;
+                position: absolute;
+                top: 30%;
+                left: 30%;
+                z-index: 2;
+                color: #9b0e16;
+                font-family: 'SansPosterBold3D';
+            }
+             div[title="R2"]{
+                transform: rotate(180deg);
+                font-size: 15vw;
+                position: absolute;
+                top: 32%;
+                left: 65%;
+                z-index: 2;
+                color: #9b0e16;
+                font-family: 'SansPosterBold3D';
+            }
+             div[title="vol_2"]{
+                transform: rotate(180deg);
+                position: absolute;
+                font-size: 15vw;
+                top: 68%;
+                left: 95%;
+                z-index: 1;
+                 color: darkred;
+                font-family: 'TYPEWR';  
+            }
+            div[title="vol_2"] p:first-child{
+                position: absolute;
+                font-size: 2vh;
+                z-index: 2;
+            }
+            div[title="vol_2"] p:last-child{
+                position: absolute;
+                left: 25px;
+                top: -5px;
+                font-size: 20vh;
+                font-family: 'TYPEWR';
+                z-index: 1;
+            }
+             div[title="no_"]{
+                transform: rotate(180deg);
+                position: absolute;
+                top: 68%;
+                font-size: 15vw;
+                left: 25%;
+                z-index: 1;
+                 color: darkred;
+                font-family: 'TYPEWR';  
+            }
+            div[title="no_"] p:first-child{
+                position: absolute;
+                font-size: 2vh;
+                z-index: 2;
+            }
+            div[title="no_"] p:last-child{
+                position: absolute;
+                left: 25px;
+                top: -5px;
+                font-size: 20vh;
+                font-family: 'TYPEWR';
+                z-index: 1;
+            }
+             div[title="O"]{
+                font-size: 22vw;
+                position: absolute;
+                top: 48%;
+                left: 45%;
+                z-index: 1;
+                color: #9b0e16;
+                font-family: 'SansPosterBold3D';
+            }
+            div[title="o"]{
+                font-size: 15vw;
+                position: absolute;
+                top: 79%;
+                left: 65%;
+                z-index: 1;
+                color: #9b0e16;
+                font-family: 'SansPosterBold3D';
+            }
+            div[title="o2"]{
+                transform: rotate(180deg);
+                font-size: 15vw;
+                position: absolute;
+                top: 80%;
+                left: 30%;
+                z-index: 1;
+                color: #9b0e16;
+                font-family: 'SansPosterBold3D';
+            }
+             div[title="no_2"]{
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                top: 120%;
+                left: 43%;
+                z-index: 2;
+                 color: darkred;
+                font-family: 'TYPEWR';  
+            }
+            div[title="no_2"] p:first-child{
+                position: absolute;
+                font-size: 2vh;
+                z-index: 2;
+            }
+            div[title="no_2"] p:last-child{
+                position: absolute;
+                left: 25px;
+                top: -5px;
+                font-size: 20vh;
+                z-index: 1;
+                font-family: 'TYPEWR', bold;
+            }
+            div[title="M"]{
+                transform: rotate(180deg);
+                font-size: 20vw;
+                position: absolute;
+                top: 103%;
+                left: 0;
+                z-index: 1;
+                color: #9b0e16;
+                font-family: 'SansPosterBold3D';
+            }
+            div[title="M2"]{
+                font-size: 20vw;
+                position: absolute;
+                top: 101%;
+                right: 0;
+                z-index: 1;
+                color: #9b0e16;
+                font-family: 'SansPosterBold3D';
+            }
+            @media only screen and (max-width:800px){
+                body{
+                    background-color: #cdb38e;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+        <div title="B">B</div>
+        <div title="vol_">
+            <p>VOL.</p>
+            <p>6</p>
+        </div>
+        <div title="B2">B</div>
+        <div title="R">R</div>
+        <div title="R2">R</div>
+        <div title="no_">
+            <p>NO.</p>
+            <p>1</p>
+        </div>
+        <div title="O">O</div>
+         <div title="vol_2">
+            <p>VOL.</p>
+            <p>6</p>
+        </div>
+        <div title="o">o</div>
+        <div title="o2">o</div>
+        <div title="M">M</div>
+         <div title="no_2">
+            <p>NO.</p>
+            <p>1</p>
+        </div>
+        <div title="M2">M</div>
+    </body>
+</html>
